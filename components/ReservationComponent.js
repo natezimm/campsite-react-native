@@ -29,10 +29,6 @@ class Reservation extends Component {
             date: new Date(),
             showCalendar: false     
         });
-    }
-
-    handleReservation() {
-        console.log(JSON.stringify(this.state));
         const alertInfo = `Number of Campers: ${this.state.campers}\n\n`
             + `Hike-In? ${this.state.hikeIn}\n\n` 
             + `Date: ${JSON.stringify(this.state.date.toLocaleDateString())}`;
